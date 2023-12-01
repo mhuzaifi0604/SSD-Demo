@@ -22,18 +22,9 @@ echo 'Deploying....'
 
 }
 post {
-  //echo 'writing post to jenkins file'
-  always {
-    //echo 'writing always to jenkins file'
-    steps {
-      echo 'writing always to jenkins file'
-    }
-  }
-  failure {
-    //echo 'writing failure to jenkins file'
-    steps {
-      echo 'writing always to jenkins file'
-    }
-  }
+//echo 'writing post to jenkins file'
+always {
+//echo 'writing always to jenkins file'
+}
 }
 }
