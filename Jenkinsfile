@@ -1,5 +1,3 @@
-flag=true
-
 pipeline {
   agent any
   stages {
@@ -21,7 +19,7 @@ pipeline {
       // Here you can define commands for your deployment
       }
     }
-  
+ 
   }
   post {
     // the conditions after build
