@@ -21,4 +21,13 @@ echo 'Deploying....'
 }
 
 }
+post {
+  // writing post to jenkins file
+  always {
+    // writing always to jenkins file
+  }
+  failure {
+    // writing failure to jenkins file
+  }
+}
 }
