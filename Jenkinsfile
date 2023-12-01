@@ -10,22 +10,23 @@ pipeline {
     stage('Test') {
       steps {
         echo 'Testing..'
-      // Here you can define commands for your tests
+        // Here you can define commands for your tests
       }
     }
     stage('Deploy') {
       steps {
         echo 'Deploying....'
-      // Here you can define commands for your deployment
+        // Here you can define commands for your deployment
       }
     }
- 
   }
   post {
-// the conditions after build
-always {
-}
-failure {
-}
-}
+    // the conditions after build
+    always {
+      echo 'Always run this step'
+    }
+    failure {
+      echo 'Failed, but run this step'
+    }
+  }
 }
