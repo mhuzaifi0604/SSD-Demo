@@ -1,3 +1,4 @@
+flag = false
 pipeline {
   agent any
   stages {
