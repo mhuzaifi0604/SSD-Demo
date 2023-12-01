@@ -1,11 +1,15 @@
 flag = false
 pipeline {
   agent any
+  environment {
+    NEW_VERSION = '1.3.0'
+  }
   stages {
     stage('Build') {
       steps {
-        echo 'Building..'
-        // Here you can define commands for your build
+         echo 'Building..'
+        // Here you can define commands for your 
+        echo "building version ${New_VERSION}"
       }
     }
     stage('Test') {
